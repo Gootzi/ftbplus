@@ -180,6 +180,14 @@ function Shape(x, y, random) {
         this.size = 83;
         this.health = 2600;
         this.maxhealth = 2600;
+        
+        //Super Nonagon
+    } else if (random < 0.97) {
+        stype = 13;
+        this.size = 83;
+        this.health = 1000000;
+        this.maxhealth = 1000000;
+
 
         //Blue Alpha Pentagon
     } else if (random < 0.9999) {
