@@ -187,6 +187,10 @@ function drawTank() {
             } else if (shapes[n].type === 10) {
                 drawPoly(shapes[n].x, shapes[n].y, shapes[n].size, shapes[n].angle, "#CA5E5F", 8);
 
+                //Super Nonagon
+            } else if (shapes[n].type === 13) {
+                drawPoly(shapes[n].x, shapes[n].y, shapes[n].size, shapes[n].angle, "#00FF00", 9);
+
                 //Nonagon
             } else {
                 drawPoly(shapes[n].x, shapes[n].y, shapes[n].size, shapes[n].angle, "#5E71CA", 9);
