@@ -70,6 +70,19 @@ function drawBarrel(a, xoffset, yoffset, width, length, alpha, isghost, type, im
         ctx.closePath();
         ctx.fill();
         ctx.stroke();
+    } else if (image === "trapper") {
+            ctx.beginPath();
+            ctx.moveTo(xoffset + length, -(width / 2) - yoffset);
+            ctx.lineTo(xoffset + length + (length / 2), 0 - ((width * 1.5) + yoffset));
+            ctx.lineTo(xoffset + length + (length / 2), ((width * 1.5) - yoffset));
+            ctx.lineTo(xoffset + length, (width / 2) - yoffset);
+            ctx.lineTo(xoffset + length, -(width / 2) - yoffset);
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.fillRect(xoffset, 0 - ((width / 2) + yoffset), length, width);
+            ctx.strokeRect(xoffset, 0 - ((width / 2) + yoffset), length, width);
     } else {
         if (type === 0) {
             ctx.fillRect(xoffset, 0 - ((width / 2) + yoffset), length, width);
